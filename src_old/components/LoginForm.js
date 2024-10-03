@@ -28,10 +28,12 @@ const LoginForm = () => {
                     <input type="text" value={username} onChange={handleUsernameInput}/>
                 </label>
 
-                <label>
+                
+        
+                {/* <label>
                     Password: 
                     <input type="text" value={password} onChange={handlePasswordInput}/>
-                </label>
+                </label> */}
 
                 <input type="submit" value="Submit"/>
 
