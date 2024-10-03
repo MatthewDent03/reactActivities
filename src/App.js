@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import ModuleTitle from "./components/ModuleTitle";
+import CharacterLength from "./components/CharacterLength";
+const App = () => {
+    return (
+            
+            <>
+                <ModuleTitle myTitle="Front End Development"/>
+                <ModuleTitle myTitle="Advanced JavaScript"/>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+                <CharacterLength name="Johnny" age={30} occupation={{title:"Lecturer", years: 7}}/>
+                <CharacterLength name="Gillian" age={26}/>
+                <CharacterLength name="Jordan" age="20"/>
+            </>
+    );
+};
 
 export default App;
